@@ -1,0 +1,78 @@
+@use './variables';
+
+.orientation .event:nth-child(even) .container {
+  flex-direction: row-reverse;
+}
+
+.event {
+    padding: 80px 0;
+
+    &--front-end {
+        background-image: linear-gradient(to bottom, variables.$firstLinear, variables.$secondLinear);
+    }
+
+    &--back-end {
+        background-image: linear-gradient(to bottom, variables.$secondLinear, variables.$thirdLinear);
+    }
+
+    &--data-science {
+        background-image: linear-gradient(to bottom, variables.$thirdLinear, variables.$forthLinear);
+    }
+
+    &--ux-ui {
+        background-image: linear-gradient(to bottom, variables.$forthLinear, variables.$thirdLinear);
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+
+    &__details {
+
+
+        &__tittle {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            line-height: 22px;
+            text-align: justify;
+        }
+
+        &__image {
+            max-width: 360px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__details {
+            margin-right: 0px;
+
+            &__tittle {
+                margin-bottom: 16px;
+            }
+
+            &__text {
+                margin-bottom: 16px;
+
+            }
+
+            &__image {
+                max-width: 100%;
+            }
+        }
+
+    }
+
+}

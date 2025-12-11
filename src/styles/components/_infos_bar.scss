@@ -1,3 +1,5 @@
+@use '../variables';
+
 .infos-bar {
     background-color: #fff;
     padding: 16px 24px;
@@ -17,11 +19,11 @@
         }
 
         &__item {
-            color: #000000;
+            color: variables.$secondarytextcolor;
 
             strong {
                 display: block;
-                color: #000000;
+                color: variables.$secondarytextcolor;
                 font-weight: 700;
                 display: block;
                 margin-bottom: 8px;
