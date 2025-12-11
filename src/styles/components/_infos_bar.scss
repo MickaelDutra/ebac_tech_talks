@@ -1,0 +1,51 @@
+.infos-bar {
+    background-color: #fff;
+    padding: 16px 24px;
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        @media (max-width: 1024px) {
+            gap: 12px;
+        }
+
+        &__item {
+            color: #000000;
+
+            strong {
+                display: block;
+                color: #000000;
+                font-weight: 700;
+                display: block;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        display: block;
+        margin-top: 32px;
+
+        &__infos {
+            display: block;
+            margin-bottom: 12px;
+
+            &__item {
+                margin-bottom: 12px;
+            }
+
+        }
+
+        &__button {
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
+}
