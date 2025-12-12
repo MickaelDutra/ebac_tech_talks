@@ -1,7 +1,7 @@
 AOS.init();
 
 
-const date = new Date("dec 11, 2026 12:00:00");
+const date = new Date("dec 11, 2026 19:00:00");
 const timeStampDate = date.getTime();
 
 const countdown = setInterval(() => {
